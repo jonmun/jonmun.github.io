@@ -12,14 +12,12 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
   <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
+  <link href="css/resume.min.css" rel="stylesheet"> 
 
 </head>
 
@@ -41,8 +39,12 @@
           <a class="nav-link js-scroll-trigger" href="#about">About</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
         </li>
+ 
  
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#internships">Internships</a>
@@ -63,13 +65,55 @@
     </div>
   </nav>
 
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Jonathan
+          <span class="text-primary">Munro</span>
+        </h1>
+        <div class="subheading mb-5">University of Bristol·
+          <a href="mailto:name@email.com">jonathan.munro@bristol.ac.uk</a>
+        </div>
+        <p class="lead mb-5">I am a 3rd year PhD student at University of Bristol supervised Dr Dima Damen. My interests include fine-grained video understanding and transfer learning with a focus on domain adaptation for action recognition.</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/jonathan-munro-a78443102/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/jonmun">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/JonathanMunro8">
+            <i class="fab fa-twitter"></i>
+          </a>
+       </div>
+      </div>
+    </section>
+
+ 
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="projects">
+      <div class="w-100">
+        <h2 class="mb-5">Projects</h2>        
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Multi-Modal Domain Adaptation for Fine-grained Action Recogntition</h3>
+	    <p> Fine-grained action recognition datasets exhibit environmental bias, where multiple video sequences are captured from a limited number of environments. Training a model in one environment and deploying in another results in a drop in performance due to an unavoidable domain shift. Unsupervised Domain Adaptation (UDA) approaches have frequently utilised adversarial training between the source and target domains. However, these approaches have not explored the multi-modal nature of video within each domain. In this work we exploit the correspondence of modalities as a self-supervised alignment approach for UDA in addition to adversarial alignment. We test our approach on three kitchens from our large-scale dataset, EPIC-Kitchens, using two modalities commonly employed for action recognition: RGB and Optical Flow. We show that multi-modal self-supervision alone improves the performance over source-only training by 2.4 on average. We then combine adversarial training with multi-modal self-supervision, showing that our approach outperforms other UDA methods by 3%.
+	   <\p>
+            <div style="width: 100%; max-width:600px;">
+             <img src='img/motivation.svg' style="width: 100%" />
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="publications">
       <div class="w-100">
         <h2 class="mb-5">Publications</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Multi-Modal Domain Adaptation for Fine-grained Action Recogntition</h3>
+            <h3 class="mb-3">Multi-Modal Domain Adaptation for Fine-grained Action Recogntition</h3>
             <div class="subheading mb-3">Computer Vision and Pattern Recognition(CVPR)</div>
             <p>Jonathan Munro, Dima Damen</p>
           </div>
@@ -95,32 +139,6 @@
  
 
   <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Jonathan
-          <span class="text-primary">Munro</span>
-        </h1>
-        <div class="subheading mb-5">University of Bristol·
-          <a href="mailto:name@email.com">jonathan.munro@bristol.ac.uk</a>
-        </div>
-        <p class="lead mb-5">I am a 3rd year PhD student at University of Bristol supervised Dr Dima Damen. My interests include fine-grained video understanding and transfer learning with a focus on domain adaptation for action recognition.</p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/jonathan-munro-a78443102/">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </div>
-      </div>
-    </section>
 
     <hr class="m-0">
 
@@ -247,7 +265,7 @@
 
   </div>
 
-  <!-- Bootstrap core JavaScript -->
+  <!-- Bootstrap core JavaScript --> 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -255,7 +273,7 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
+  <script src="js/resume.min.js"></script> 
 
 </body>
 
