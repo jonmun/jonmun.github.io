@@ -16,12 +16,20 @@
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
   <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet"> 
+  <link href="css/resume.css" rel="stylesheet"> 
 
 </head>
 
 <body id="page-top">
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-pytorch" viewBox="0 0 32 32">
+<path fill="#ee4c2c" style="fill: var(--color1, #ee4c2c)" d="M16.007 0.053l-9.373 9.373c-2.401 2.377-3.887 5.673-3.887 9.317s1.486 6.94 3.886 9.316l0.001 0.001c2.377 2.401 5.674 3.887 9.317 3.887s6.94-1.486 9.316-3.886l0.001-0.001c5.293-5.183 5.296-13.561 0.112-18.635l-2.317 2.316c3.86 3.86 3.86 10.144 0 14.004-3.859 3.859-10.144 3.859-14.004 0-3.859-3.86-3.859-10.145 0-14.004l6.176-6.175 0.773-0.884zM20.748 5.235c-0.974 0-1.764 0.79-1.764 1.764v0c0 0.974 0.79 1.764 1.764 1.764v0c0.974 0 1.764-0.79 1.764-1.764v0c0-0.974-0.79-1.764-1.764-1.764v0z"></path>
+</symbol>
+</defs>
+</svg>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -55,9 +63,11 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
         </li>
+	<!--
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
         </li>
+	-->
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
         </li>
@@ -73,7 +83,7 @@
         <div class="subheading mb-5">University of Bristol·
           <a href="mailto:name@email.com">jonathan.munro@bristol.ac.uk</a>
         </div>
-        <p class="lead mb-5">I am a 3rd year PhD student at University of Bristol supervised Dr Dima Damen. My interests include fine-grained video understanding and transfer learning with a focus on domain adaptation for action recognition.</p>
+        <p class="lead mb-5">I am a final year PhD student at University of Bristol supervised Dr Dima Damen. My interests include fine-grained video understanding and transfer learning with a focus on domain adaptation for action recognition.</p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/jonathan-munro-a78443102/">
             <i class="fab fa-linkedin-in"></i>
@@ -93,7 +103,7 @@
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="projects">
       <div class="w-100">
         <h2 class="mb-5">Projects</h2>        
-        <a href="https://jonmun.github.io/mmsada/">
+	<!--<a href="https://jonmun.github.io/mmsada/">-->
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <a href="https://jonmun.github.io/mmsada/">
@@ -108,6 +118,25 @@
             </div>
           </div>
         </div>
+	
+	<!--<a href="https://epic-kitchens.github.io/2021">-->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <a href="https://epic-kitchens.github.io/2021">
+            <h3 class="mb-0">EPIC-KITCHENS-100</h3>
+            </a>
+	    <p>The extended largest dataset in first-person (egocentric) vision; multi-faceted, audio-visual, non-scripted recordings in native environments - i.e. the wearers' homes, capturing all daily activities in the kitchen over multiple days. Annotations are collected using a novel 'Pause-and-Talk' narration interface.</p>
+            <div style="width: 100%; max-width:600px;">
+            <a href="https://epic-kitchens.github.io/2021"> 
+             <video autoplay muted loop width="100%">
+             <source src='img/03x03_videoWall.webm' style="width: 100%" type="video/webm" />
+	     </video>
+            </a>
+            </div>
+          </div>
+        </div>
+
+
 
     </section>
 
@@ -118,7 +147,35 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-3">Multi-Modal Domain Adaptation for Fine-grained Action Recogntition</h3>
+            <h3 class="mb-0">Recaling egocentric vision</h3>
+	    <div class="subheading mb-3">ArXiv</div>
+            <p>Dima Damen, Hazel Doughty, Giovanni Maria Farinella, Antonino Furnari, Evangelos Kazakos, Jian Ma, Davide Moltisanti, Jonathan Munro, Toby Perrett, Will Price, Michael Wray</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2020</span>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">The epic-kitchens dataset: Collection, challenges and baselines</h3>
+            <div class="subheading mb-3">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</div>
+            <p>Dima Damen, Hazel Doughty, Giovanni Farinella, Sanja Fidler, Antonino Furnari, Evangelos Kazakos, Davide Moltisanti, Jonathan Munro, Toby Perrett, Will Price, Michael Wray</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2020</span>
+          </div>
+        </div>
+
+
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-3">Multi-modal domain adaptation for fine-grained action recogntition</h3>
             <div class="subheading mb-3">Computer Vision and Pattern Recognition(CVPR)</div>
             <p>Jonathan Munro, Dima Damen</p>
           </div>
@@ -130,7 +187,7 @@
  
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Scaling Egocentric Vision: The EPIC-KITCHENS Dataset</h3>
+            <h3 class="mb-0">Scaling egocentric vision: The EPIC-KITCHENS dataset</h3>
             <div class="subheading mb-3">European Conference on Computer Vision (ECCV)</div>
             <p>Dima Damen, Hazel Doughty, Giovanni Maria Farinella, Sanja Fidler, Antonino Furnari, Evangelos Kazakos, Davide Moltisanti, Jonathan Munro, Toby Perrett, Will Price, Michael Wray</p>
           </div>
@@ -138,6 +195,8 @@
             <span class="text-primary">2018</span>
           </div>
         </div>
+
+
 
     </section>
 
@@ -212,7 +271,9 @@
             <h3 class="mb-0">University of Bristol</h3>
             <div class="subheading mb-3">MEng Computer Science and Electronics</div>
             <p>First</p>
+	    <!--
 	    <p>Thesis: Visual Tracking and Localisation For Drone Perception (<a href="MultidroneThesis.pdf">pdf</a>)</p>
+	    -->
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">2013 - 2017</span>
@@ -225,10 +286,17 @@
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+
+<defs>
+<symbol id="icon-pytorch" viewBox="0 0 32 32">
+<path fill="#ee4c2c" style="fill: var(--color1, #ee4c2c)" d="M16.007 0.053l-9.373 9.373c-2.401 2.377-3.887 5.673-3.887 9.317s1.486 6.94 3.886 9.316l0.001 0.001c2.377 2.401 5.674 3.887 9.317 3.887s6.94-1.486 9.316-3.886l0.001-0.001c5.293-5.183 5.296-13.561 0.112-18.635l-2.317 2.316c3.86 3.86 3.86 10.144 0 14.004-3.859 3.859-10.144 3.859-14.004 0-3.859-3.86-3.859-10.145 0-14.004l6.176-6.175 0.773-0.884zM20.748 5.235c-0.974 0-1.764 0.79-1.764 1.764v0c0 0.974 0.79 1.764 1.764 1.764v0c0.974 0 1.764-0.79 1.764-1.764v0c0-0.974-0.79-1.764-1.764-1.764v0z"></path>
+</symbol>
+ </defs>
+ 
       <div class="w-100">
         <h2 class="mb-5">Skills</h2>
 
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+	<!--<div class="subheading mb-3">Programming Languages &amp; Tools</div>-->
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
             <i class="fab fa-python"></i>
@@ -237,16 +305,32 @@
             <i class="fab fa-java"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-pytorch"></i>
+             <i class="devicon-cplusplus-plain"></i>
           </li>
+          <li class="list-inline-item">
+            <i class="devicon-bash-plain"></i>
+          </li> 
+       </ul>
+        <ul class="list-inline dev-icons">
+         <li class="list-inline-item">
+             TensorFlow <i class="devicon-tensorflow-original colored"></i>
+          </li> 
+       </ul>
+        <ul class="list-inline dev-icons">
  
+         <li class="list-inline-item dev-icons">
+             PyTorch <svg class="icon icon-pytorch">PyTorch<use xlink:href="#icon-pytorch"></use>
+	     </svg>
+          </li> 
  
        </ul>
+
+ 
 
    </section>
 
     <hr class="m-0">
-
+<!--
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
@@ -254,7 +338,7 @@
         <p class="mb-0"></p>
       </div>
     </section>
-
+-->
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
